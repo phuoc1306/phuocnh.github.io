@@ -1,0 +1,191 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio - Nguyễn Hữu Phước</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 24px;
+      padding: 20px;
+    }
+
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+
+    /* Sidebar */
+    .avatar {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .name {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #58a6ff;
+    }
+
+    .role {
+      font-size: 1rem;
+      color: #9eb7d3;
+      margin-bottom: 10px;
+    }
+
+    .meta p {
+      margin: 6px 0;
+      font-size: 0.95rem;
+    }
+
+    .contact a {
+      color: #58a6ff;
+      text-decoration: none;
+      display: block;
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      background: #238636;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Main */
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      padding-left: 15px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: #58a6ff;
+    }
+
+    .project {
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Sidebar -->
+    <aside class="card">
+      <img src="avt.jpg" alt="Ảnh đại diện Nguyễn Hữu Phước" class="avatar">
+      <div class="name">Nguyễn Hữu Phước</div>
+      <div class="role">Security Analyst · An toàn thông tin mạng</div>
+
+      <div class="meta">
+        <p><b>Ngày sinh:</b> 13/06/2003</p>
+        <p><b>Địa chỉ:</b> TP. Hồ Chí Minh</p>
+      </div>
+
+      <div class="contact">
+        <a href="mailto:phuoc14062003@gmail.com">✉ phuoc14062003@gmail.com</a>
+        <a href="tel:0707647430">☎ 0707647430</a>
+        <a href="https://github.com/username" target="_blank"> github.com/username</a>
+        <a href="https://linkedin.com/in/username" target="_blank">in/username</a>
+      </div>
+
+      <a class="btn" href="CV_NguyenHuuPhuoc.pdf" download>⬇ Tải CV (PDF)</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+      <div class="card">
+        <h2>Giới thiệu</h2>
+        <p>Tôi là sinh viên chuyên ngành An toàn thông tin mạng, có kinh nghiệm thực hành với firewall, IDS/IPS, phân tích malware và triển khai hệ thống server. Mục tiêu nghề nghiệp là trở thành chuyên gia bảo mật.</p>
+      </div>
+
+      <div class="card">
+        <h2>Kỹ năng</h2>
+        <ul>
+          <li>Quản trị hệ thống: Windows, Linux (Ubuntu, Kali, CentOS)</li>
+          <li>Firewall: pfSense, Check Point, OPNsense</li>
+          <li>IDS/IPS: Snort, Suricata, Security Onion</li>
+          <li>Giám sát hệ thống: Zabbix, Grafana, Wazuh</li>
+          <li>Công cụ phân tích: Wireshark, Volatility, Burp Suite</li>
+          <li>Ảo hóa: VMware, VirtualBox, Hyper-V</li>
+          <li>Lập trình: Python (cơ bản)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Dự án & Kinh nghiệm</h2>
+        <div class="project">
+          <h3>Phân tích fileless malware</h3>
+          <p>Phân tích hành vi fileless malware, thu thập memory dump, sử dụng Volatility và viết báo cáo kỹ thuật.</p>
+        </div>
+        <div class="project">
+          <h3>Triển khai pfSense + OpenVPN</h3>
+          <p>Xây dựng hệ thống firewall pfSense cho doanh nghiệp, tích hợp OpenVPN cho remote access.</p>
+        </div>
+        <div class="project">
+          <h3>WebGoat - OWASP Broken Access Control</h3>
+          <p>Thiết lập WebGoat, kiểm thử lỗ hổng Broken Access Control và viết báo cáo khắc phục.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Học vấn</h2>
+        <p>Đại học Gia Định — Ngành Công nghệ thông tin, chuyên ngành An toàn thông tin mạng</p>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    © 2025 - Portfolio của Nguyễn Hữu Phước
+  </footer>
+</body>
+</html>
+```
